@@ -35,3 +35,37 @@ function calculateTotal(){
 
 let btncal = document.getElementById("btncal");
 btncal.addEventListener("click", calculateTotal);
+
+function firstFunction(a, b){
+    return a + b;
+}
+let result = firstFunction(10, 20);
+console.log(result);
+
+
+//for in loop
+const person = {
+    name: "Nimal",
+    age:"30",
+    category:"Manager"
+}
+
+for(const key in person){
+    console.log(key + ": " + person[key]);
+}
+
+//forEach loop
+const numbers = [15, 25, 35, 45, 55];
+let sum = 0;
+numbers.forEach((number) => {
+    sum += number;
+})
+
+console.log("Sum: " + sum);
+
+
+//for of loop
+const fruits = ["Apple", "Banana", "Mango", "Orange"];
+for(const fruit of fruits){
+    console.log(fruit);
+}
